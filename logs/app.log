@@ -1,0 +1,172 @@
+2020-10-23 15:50:14 [restartedMain] INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on MS-UFIYVLDHDZMG with PID 4744 (D:\boot-nacos-master\target\classes started by Administrator in D:\boot-nacos-master)
+2020-10-23 15:50:14 [restartedMain] INFO  com.example.demo.DemoApplication Line:679 - The following profiles are active: dev
+2020-10-23 15:50:15 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-23 15:50:15 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-23 15:50:17 [restartedMain] INFO  com.alibaba.nacos.client.identify.CredentialWatcher Line:99  - [] [] [] No credential found
+2020-10-23 15:50:18 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$447a0d60] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 15:50:23 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 15:50:23 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:50:23 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-23 15:50:23 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-23 15:50:23 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener Line:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\erl-23.0\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.5\sbin;C:\Program Files\erl-23.0\bin;D:\node\;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;.]
+2020-10-23 15:50:24 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-23 15:50:24 [restartedMain] INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 8883 ms
+2020-10-23 15:50:26 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of @com.alibaba.nacos.api.config.annotation.NacosValue dependencies is failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - com.mysql.jdbc.Driver was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - jdbc:mysql://localhost:3306/mytest_dev?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - root was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - root was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:276 - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor Line:276 - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-10-23 15:50:26 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Stopping service [Tomcat]
+2020-10-23 15:50:26 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener Line:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-23 15:50:26 [restartedMain] ERROR org.springframework.boot.SpringApplication Line:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of @com.alibaba.nacos.api.config.annotation.NacosValue dependencies is failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:122)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor.doGetInjectedBean(NacosValueAnnotationBeanPostProcessor.java:82)
+	at com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor.doGetInjectedBean(NacosValueAnnotationBeanPostProcessor.java:54)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:330)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:510)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:118)
+	... 22 common frames omitted
+2020-10-23 15:51:38 [restartedMain] INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on MS-UFIYVLDHDZMG with PID 5172 (D:\boot-nacos-master\target\classes started by Administrator in D:\boot-nacos-master)
+2020-10-23 15:51:38 [restartedMain] INFO  com.example.demo.DemoApplication Line:679 - The following profiles are active: dev
+2020-10-23 15:51:38 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-23 15:51:38 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-23 15:51:40 [restartedMain] INFO  com.alibaba.nacos.client.identify.CredentialWatcher Line:99  - [] [] [] No credential found
+2020-10-23 15:51:41 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58aa5ac9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 15:51:42 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 15:51:42 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:51:42 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-23 15:51:42 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-23 15:51:42 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener Line:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\erl-23.0\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.5\sbin;C:\Program Files\erl-23.0\bin;D:\node\;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;.]
+2020-10-23 15:51:42 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-23 15:51:42 [restartedMain] INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 3969 ms
+2020-10-23 15:51:44 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-23 15:51:45 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+2020-10-23 15:51:45 [restartedMain] INFO  com.alibaba.nacos.spring.context.event.LoggingNacosConfigMetadataEventListener Line:55  - Nacos Config Metadata : dataId='mytest', groupId='DEFAULT_GROUP', beanName='databaseConfig', bean='null', beanType='class com.example.demo.config.DatabaseConfig', annotatedElement='null', xmlResource='null', nacosProperties='{namespace=f33b86c6-bcb3-45c3-a92f-d8340a2ce2fa, serverAddr=localhost:8848, encode=UTF-8}', nacosPropertiesAttributes='{encode=${nacos.encode:UTF-8}, namespace=${nacos.namespace:}, endpoint=${nacos.endpoint:}, accessKey=${nacos.access-key:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, contextPath=${nacos.context-path:}, clusterName=${nacos.cluster-name:}}', source='org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor@6d0f26bc', timestamp='1603439500404'
+2020-10-23 15:51:45 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:51:45 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-23 15:51:45 [restartedMain] INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 9.071 seconds (JVM running for 11.904)
+2020-10-23 15:51:58 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-23 15:51:58 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2020-10-23 15:51:58 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 239 ms
+2020-10-23 15:51:59 [http-nio-0.0.0.0-8080-exec-1] INFO  com.alibaba.druid.pool.DruidDataSource Line:991 - {dataSource-1} inited
+2020-10-23 15:54:29 [restartedMain] INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on MS-UFIYVLDHDZMG with PID 5772 (D:\boot-nacos-master\target\classes started by Administrator in D:\boot-nacos-master)
+2020-10-23 15:54:29 [restartedMain] INFO  com.example.demo.DemoApplication Line:679 - The following profiles are active: dev
+2020-10-23 15:54:29 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-23 15:54:29 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-23 15:54:31 [restartedMain] INFO  com.alibaba.nacos.client.identify.CredentialWatcher Line:99  - [] [] [] No credential found
+2020-10-23 15:54:32 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$58fa7d41] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 15:54:32 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 15:54:32 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:54:33 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-23 15:54:33 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-23 15:54:33 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener Line:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\erl-23.0\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.5\sbin;C:\Program Files\erl-23.0\bin;D:\node\;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;.]
+2020-10-23 15:54:33 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-23 15:54:33 [restartedMain] INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 3846 ms
+2020-10-23 15:54:34 [restartedMain] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:557 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of @com.alibaba.nacos.api.config.annotation.NacosValue dependencies is failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - com.mysql.jdbc.Driver was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - jdbc:mysql://localhost:3306/mytest_dev?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - root was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:264 - root was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor Line:276 - class com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor Line:276 - class com.alibaba.nacos.spring.beans.factory.annotation.AnnotationNacosInjectedBeanPostProcessor was destroying!
+2020-10-23 15:54:34 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Stopping service [Tomcat]
+2020-10-23 15:54:34 [restartedMain] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener Line:142 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-10-23 15:54:34 [restartedMain] ERROR org.springframework.boot.SpringApplication Line:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userController': Injection of @com.alibaba.nacos.api.config.annotation.NacosValue dependencies is failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:122)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1400)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.example.demo.DemoApplication.main(DemoApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'testname' in value "${testname}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor.doGetInjectedBean(NacosValueAnnotationBeanPostProcessor.java:82)
+	at com.alibaba.nacos.spring.context.annotation.config.NacosValueAnnotationBeanPostProcessor.doGetInjectedBean(NacosValueAnnotationBeanPostProcessor.java:54)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.getInjectedObject(AnnotationInjectedBeanPostProcessor.java:330)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor$AnnotatedFieldElement.inject(AnnotationInjectedBeanPostProcessor.java:510)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at com.alibaba.spring.beans.factory.annotation.AnnotationInjectedBeanPostProcessor.postProcessPropertyValues(AnnotationInjectedBeanPostProcessor.java:118)
+	... 22 common frames omitted
+2020-10-23 15:58:23 [restartedMain] INFO  com.example.demo.DemoApplication Line:50  - Starting DemoApplication on MS-UFIYVLDHDZMG with PID 6120 (D:\boot-nacos-master\target\classes started by Administrator in D:\boot-nacos-master)
+2020-10-23 15:58:23 [restartedMain] INFO  com.example.demo.DemoApplication Line:679 - The following profiles are active: dev
+2020-10-23 15:58:23 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2020-10-23 15:58:23 [restartedMain] INFO  org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor Line:227 - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2020-10-23 15:58:25 [restartedMain] INFO  com.alibaba.nacos.client.identify.CredentialWatcher Line:99  - [] [] [] No credential found
+2020-10-23 15:58:26 [restartedMain] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4eb2de52] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-10-23 15:58:27 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 8080 (http)
+2020-10-23 15:58:27 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:58:27 [restartedMain] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2020-10-23 15:58:27 [restartedMain] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.16]
+2020-10-23 15:58:27 [restartedMain] INFO  org.apache.catalina.core.AprLifecycleListener Line:173 - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_191\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_191\bin;C:\Program Files\Java\jdk1.8.0_191\jre\bin;C:\Program Files\erl-23.0\bin;C:\Program Files\RabbitMQ Server\rabbitmq_server-3.8.5\sbin;C:\Program Files\erl-23.0\bin;D:\node\;C:\Program Files\Git\cmd;C:\Users\Administrator\AppData\Roaming\npm;.]
+2020-10-23 15:58:27 [restartedMain] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring embedded WebApplicationContext
+2020-10-23 15:58:27 [restartedMain] INFO  org.springframework.web.context.ContextLoader Line:296 - Root WebApplicationContext: initialization completed in 4152 ms
+2020-10-23 15:58:29 [restartedMain] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2020-10-23 15:58:29 [restartedMain] INFO  org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer Line:57  - LiveReload server is running on port 35729
+2020-10-23 15:58:29 [restartedMain] INFO  com.alibaba.nacos.spring.context.event.LoggingNacosConfigMetadataEventListener Line:55  - Nacos Config Metadata : dataId='mytest', groupId='DEFAULT_GROUP', beanName='databaseConfig', bean='null', beanType='class com.example.demo.config.DatabaseConfig', annotatedElement='null', xmlResource='null', nacosProperties='{namespace=f33b86c6-bcb3-45c3-a92f-d8340a2ce2fa, serverAddr=localhost:8848, encode=UTF-8}', nacosPropertiesAttributes='{encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, accessKey=${nacos.access-key:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, contextPath=${nacos.context-path:}, clusterName=${nacos.cluster-name:}, namespace=${nacos.namespace:}}', source='org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor@55aaa0d8', timestamp='1603439905780'
+2020-10-23 15:58:29 [restartedMain] INFO  com.alibaba.nacos.spring.context.event.LoggingNacosConfigMetadataEventListener Line:55  - Nacos Config Metadata : dataId='mytest1', groupId='DEFAULT_GROUP', beanName='userController', bean='null', beanType='class com.example.demo.controller.UserController', annotatedElement='null', xmlResource='null', nacosProperties='{namespace=f33b86c6-bcb3-45c3-a92f-d8340a2ce2fa, serverAddr=localhost:8848, encode=UTF-8}', nacosPropertiesAttributes='{encode=${nacos.encode:UTF-8}, endpoint=${nacos.endpoint:}, accessKey=${nacos.access-key:}, secretKey=${nacos.secret-key:}, serverAddr=${nacos.server-addr:}, contextPath=${nacos.context-path:}, clusterName=${nacos.cluster-name:}, namespace=${nacos.namespace:}}', source='org.springframework.core.type.classreading.AnnotationMetadataReadingVisitor@50d07042', timestamp='1603439905802'
+2020-10-23 15:58:29 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-0.0.0.0-8080"]
+2020-10-23 15:58:30 [restartedMain] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:204 - Tomcat started on port(s): 8080 (http) with context path ''
+2020-10-23 15:58:30 [restartedMain] INFO  com.example.demo.DemoApplication Line:59  - Started DemoApplication in 8.479 seconds (JVM running for 11.533)
+2020-10-23 15:58:42 [http-nio-0.0.0.0-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-10-23 15:58:42 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
+2020-10-23 15:58:42 [http-nio-0.0.0.0-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 41 ms
